@@ -1,0 +1,22 @@
+:root {
+  --primary: #859243;
+  --secondary: #5b55e6;
+  --accent: #00b8d9;
+  --neutral: #171717;
+
+  --background: #ffffff;
+  --foreground: var(--neutral);
+  --card: var(--background);
+  --card-foreground: var(--foreground);
+  --popover: var(--background);
+  --popover-foreground: var(--foreground);
+  --primary-foreground: #ffffff;
+  --secondary-foreground: #ffffff;
+  --accent-foreground: #ffffff;
+  --muted: #f4f4f5;
+  --muted-foreground: #71717a;
+  --border: #e4e4e7;
+  --input: var(--border);
+  --ring: var(--primary);
+  --destructive: #dc2626;
+}

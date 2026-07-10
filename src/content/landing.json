@@ -1,0 +1,23 @@
+{
+  "hero": {
+    "title": "Hi, I'm Alif",
+    "header": {
+      "prefix": "Your",
+      "highlight": "Web | Mobile",
+      "suffix": "Developer"
+    },
+    "body": "I create scalable digital products with clean design and smooth user experiences.",
+    "stats": [
+      {
+        "value": "2+",
+        "label": "Years Experience",
+        "description": "Web · Mobile"
+      },
+      {
+        "value": "10+",
+        "label": "Apps Launched",
+        "description": "For clients worldwide"
+      }
+    ]
+  }
+}
