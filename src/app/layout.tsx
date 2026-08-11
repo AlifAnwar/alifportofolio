@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Poppins } from "next/font/google";
 import { CustomCursor } from "@/components/shared/CustomCursor";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body className={`${poppins.className} flex min-h-full flex-col cursor-none`}>
         <CustomCursor />
         {children}
+        <Analytics />
       </body>
     </html>
   );
