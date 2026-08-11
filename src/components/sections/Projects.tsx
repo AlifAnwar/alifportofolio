@@ -53,7 +53,7 @@ export function Projects() {
                 className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-white/40 bg-white/40"
               >
                 <Image
-                  src={project.imageSrc}
+                  src={project.imageSrc[0]}
                   alt={`${project.name} preview`}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"

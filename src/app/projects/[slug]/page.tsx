@@ -14,6 +14,7 @@ import {
 
 import { Footer } from "@/components/layout/Footer";
 import { Navbar } from "@/components/layout/Navbar";
+import { ProjectImageGallery } from "@/components/projects/ProjectImageGallery";
 import { getProjectBySlug, getRelatedProjects, projects } from "@/lib/projects";
 
 type ProjectDetailPageProps = {
@@ -166,21 +167,10 @@ export default async function ProjectDetailPage({
             </aside>
           </section>
 
-          <section className="mt-14">
-            <div className="relative aspect-[16/9] overflow-hidden rounded-[2rem] border border-white/50 bg-[#f6f7ef] shadow-[0_24px_80px_rgba(0,0,0,0.08)]">
-              <Image
-                src={project.imageSrc}
-                alt={`${project.name} project preview`}
-                fill
-                priority
-                className="object-cover"
-                sizes="(min-width: 1280px) 80rem, 100vw"
-              />
-              <div className="absolute left-5 top-5 rounded-full bg-white/90 px-4 py-2 text-sm font-semibold text-foreground shadow-[0_12px_30px_rgba(0,0,0,0.08)]">
-                {project.client}
-              </div>
-            </div>
-          </section>
+          <ProjectImageGallery
+            images={project.imageSrc}
+            projectName={project.name}
+          />
 
           <section className="mt-16 grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
             <div className="glass-card rounded-3xl p-7 lg:p-8">
@@ -201,15 +191,7 @@ export default async function ProjectDetailPage({
                   Live Preview
                   <ArrowUpRight className="size-4" />
                 </Link>
-                <a
-                  href={project.sourceUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-foreground shadow-[0_16px_40px_rgba(0,0,0,0.04)] transition-transform hover:-translate-y-0.5"
-                >
-                  <GitBranch className="size-4" />
-                  Source Code
-                </a>
+               
               </div>
             </div>
 
@@ -310,7 +292,7 @@ export default async function ProjectDetailPage({
                     className="relative aspect-[16/10] overflow-hidden rounded-2xl border border-black/6 bg-[#f6f7ef]"
                   >
                     <Image
-                      src={relatedProject.imageSrc}
+                      src={relatedProject.imageSrc[0]}
                       alt={`${relatedProject.name} preview`}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"

@@ -84,7 +84,7 @@ export function Services() {
     let active = true;
 
     async function loadServices() {
-      const response = await fetch("/assets/content/service.json");
+      const response = await fetch("/assets/contents/service.json");
 
       if (!response.ok) {
         throw new Error("Failed to load service data");

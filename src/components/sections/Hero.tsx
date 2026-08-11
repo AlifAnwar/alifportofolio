@@ -101,41 +101,50 @@ export function Hero() {
 
           <motion.div
             variants={fadeUp}
-            className="mt-20 grid w-full max-w-5xl gap-10 border-t border-black/6 pt-10 sm:grid-cols-3 sm:gap-6 sm:pt-12"
+            className="mt-8 sm:mt-20 grid w-full max-w-5xl gap-10 border-t border-black/6 pt-5 grid-cols-2 sm:grid-cols-3 sm:gap-6 "
           >
             <div className="flex flex-col items-center">
-              <p className="font-display text-6xl font-bold tracking-[-0.08em] text-foreground">
+              <p className="font-display text-3xl sm:text-6xl font-bold tracking-[-0.08em] text-foreground">
                 +2
               </p>
-              <p className="mt-1 text-[clamp(1.35rem,2vw,2rem)] tracking-[-0.05em] text-foreground">
+              <p className="mt-1 text-base sm:text-[clamp(1.35rem,2vw,2rem)] tracking-[-0.05em] text-foreground">
                 Years Experience
               </p>
             </div>
 
-            <div className="flex flex-col items-center">
-              <p className="text-xl font-semibold uppercase tracking-[-0.04em] text-foreground sm:text-2xl">
-                Open For
+            <div className="hidden flex-col items-center sm:flex">
+              <p className="text-xl font-semibold  tracking-[-0.04em] text-foreground sm:text-2xl">
+                Get in touch with
               </p>
-              <p className="mt-1 text-[clamp(1.35rem,2vw,2rem)] font-medium tracking-[-0.05em] text-[#859243]">
-                Freelance
+              <p className="text-[clamp(1.35rem,2vw,2rem)] font-medium tracking-[-0.05em] text-[#859243]">
+                me?
               </p>
             </div>
 
             <div className="flex flex-col items-center">
-              <p className="font-display text-6xl font-bold tracking-[-0.08em] text-foreground">
+              <p className="font-display text-3xl sm:text-6xl font-bold tracking-[-0.08em] text-foreground">
                 +10
               </p>
-              <p className="mt-1 text-[clamp(1.35rem,2vw,2rem)] tracking-[-0.05em] text-foreground">
+              <p className="mt-1 text-base sm:text-[clamp(1.35rem,2vw,2rem)] tracking-[-0.05em] text-foreground">
                 Project Client
               </p>
             </div>
           </motion.div>
 
+          <div className="mt-10 flex flex-col items-center sm:hidden">
+            <p className="text-xl font-semibold tracking-[-0.04em] text-foreground">
+              Get in touch with
+            </p>
+            <p className="text-[1.35rem] font-medium tracking-[-0.05em] text-[#859243]">
+              me?
+            </p>
+          </div>
+
           <motion.a
             href="#contact"
             whileHover={{ y: -2, scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="inline-flex items-center gap-3 rounded-2xl bg-[#485600] px-7 py-4 text-lg font-medium text-white shadow-[0_18px_40px_rgba(72,86,0,0.24)] transition-shadow hover:shadow-[0_24px_52px_rgba(72,86,0,0.32)]"
+            className="mt-5 inline-flex items-center gap-3 rounded-2xl bg-[#485600] px-7 py-3 text-lg font-medium text-white shadow-[0_18px_40px_rgba(72,86,0,0.24)] transition-shadow hover:shadow-[0_24px_52px_rgba(72,86,0,0.32)] sm:mt-0"
           >
             <span>Contact Me</span>
             <span className="flex size-7 items-center justify-center rounded-full bg-white text-[#485600]">

@@ -1,4 +1,4 @@
-import projectsData from "@/content/projects.json";
+import projectsData from "../../public/assets/contents/projects.json";
 
 export type ProjectItem = {
   category: string;
@@ -6,7 +6,7 @@ export type ProjectItem = {
   client: string;
   description: string;
   highlights: string[];
-  imageSrc: string;
+  imageSrc: string[];
   liveUrl: string;
   name: string;
   outcome: string[];
