@@ -20,29 +20,122 @@
     "timeline": "2 weeks",
     "client": "Al Kahfi Mosque, Bintan",
     "overview": "Al Kahfi Mosque Platform brings essential worship information into one accessible website, helping the community check prayer times, browse daily prayers, explore hadith collections, and access donation information.",
-    "challenge": ["Worship information was spread across different sources.", "Prayer schedules and religious content needed to remain clear and easy to scan.", "The experience had to work comfortably across desktop and mobile devices."],
-    "solution": ["Created a focused information architecture for prayer times, prayers, and hadith.", "Designed reusable content cards and readable data layouts.", "Built responsive interfaces with clear navigation between key mosque services."],
-    "outcome": ["Centralized essential mosque information in one digital platform.", "Made prayer schedules and religious content easier to access.", "Delivered a consistent interface for the Al Kahfi community."],
-    "highlights": ["Monthly prayer schedule", "Daily prayer collection", "Hadith browser and detail view", "Responsive mosque information portal"]
+    "challenge": [
+      "Worship information was spread across different sources.",
+      "Prayer schedules and religious content needed to remain clear and easy to scan.",
+      "The experience had to work comfortably across desktop and mobile devices."
+    ],
+    "solution": [
+      "Created a focused information architecture for prayer times, prayers, and hadith.",
+      "Designed reusable content cards and readable data layouts.",
+      "Built responsive interfaces with clear navigation between key mosque services."
+    ],
+    "outcome": [
+      "Centralized essential mosque information in one digital platform.",
+      "Made prayer schedules and religious content easier to access.",
+      "Delivered a consistent interface for the Al Kahfi community."
+    ],
+    "highlights": [
+      "Monthly prayer schedule",
+      "Daily prayer collection",
+      "Hadith browser and detail view",
+      "Responsive mosque information portal"
+    ]
   },
+
   {
-    "slug": "mobile-booking-application",
-    "name": "Mobile Booking Application",
-    "description": "A cross-platform mobile booking flow with clear navigation, real-time updates, and smooth user interactions across devices.",
-    "stack": ["Flutter", "Firebase", "REST API"],
-    "imageSrc": ["/assets/images/example.png"],
-    "liveUrl": "/#contact",
+    "slug": "xue-in-mandarin",
+    "name": "Xue in Mandarin Learning Platform",
+    "description": "A responsive language learning platform for Chinese language learners.",
+    "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Motion"],
+    "imageSrc": [
+      "/assets/images/project/web/xueinmandarin/home1.png",
+      "/assets/images/project/web/xueinmandarin/home2.png",
+      "/assets/images/project/web/xueinmandarin/home3.png",
+      "/assets/images/project/web/xueinmandarin/challenge1.png",
+      "/assets/images/project/web/xueinmandarin/challenge2.png",
+      "/assets/images/project/web/xueinmandarin/challenge3.png",
+      "/assets/images/project/web/xueinmandarin/challenge4.png"
+    ],
+    "liveUrl": "https://xueinmandarin.vercel.app/",
     "sourceUrl": "https://github.com",
     "year": "2026",
-    "category": "Mobile App",
-    "role": "Mobile Developer",
-    "timeline": "5 weeks",
-    "client": "Service booking product",
-    "overview": "Mobile Booking Application is a cross-platform product focused on helping users discover services, book available time slots, and track booking status in a simple mobile flow.",
-    "challenge": ["Booking flows can lose users when steps feel unclear.", "Availability, confirmation, and status updates had to be easy to understand.", "The experience needed to stay smooth on smaller mobile screens."],
-    "solution": ["Created a focused mobile flow for service selection and scheduling.", "Structured reusable booking states for pending, confirmed, and updated appointments.", "Planned Firebase and REST API integration for real-time availability."],
-    "outcome": ["Delivered a cleaner booking journey with predictable navigation.", "Reduced friction across the main appointment flow.", "Prepared the app structure for production feature expansion."],
-    "highlights": ["Cross-platform Flutter flow", "Real-time status updates", "Service availability structure", "Mobile-first interaction design"]
+    "category": "Web App",
+    "role": "Frontend Developer",
+    "timeline": "4 weeks",
+    "client": "Personal Project",
+    "overview": "Has been use for more 100 users, xue in Mandarin Learning Platform brings essential language learning resources into one accessible website, helping learners improve their Chinese proficiency through interactive 4 lessons and practice exercises.",
+    "challenge": [
+      "Language learning materials were scattered across different platforms.",
+      "Users needed a structured approach to progress through lessons.",
+      "The platform had to be engaging and easy to use on both desktop and mobile devices."
+    ],
+    "solution": [
+      "Developed a comprehensive curriculum with progressive difficulty levels.",
+      "Created an intuitive user interface for lesson navigation and progress tracking.",
+      "Implemented responsive design principles for optimal performance on all devices."
+    ],
+    "outcome": [
+      "Provided a centralized hub for Chinese language learning resources.",
+      "Enhanced user engagement through interactive learning features.",
+      "Delivered a seamless experience for learners across different devices."
+    ],
+    "highlights": [
+      "Interactive grammar lessons",
+      "Vocabulary flashcards",
+      "Responsive language learning portal"
+    ]
+  },
+
+  {
+    "slug": "bintan-drift-tour-agent",
+    "name": "Bintan Drift Tour Agent",
+    "description": "A responsive company profile website designed to strengthen Bintan Drift Tour Agent's digital presence and showcase its travel services and destinations.",
+    "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Motion"],
+    "imageSrc": [
+      "/assets/images/project/web/bintandrifttouragent/home1.png",
+      "/assets/images/project/web/bintandrifttouragent/home2.png",
+      "/assets/images/project/web/bintandrifttouragent/home3.png",
+      "/assets/images/project/web/bintandrifttouragent/home4.png",
+      "/assets/images/project/web/bintandrifttouragent/home5.png",
+      "/assets/images/project/web/bintandrifttouragent/destination.png",
+      "/assets/images/project/web/bintandrifttouragent/destination1.png"
+    ],
+    "liveUrl": "https://bintandrifttour.id/",
+    "sourceUrl": "https://github.com",
+    "year": "2026",
+    "category": "Company Profile",
+    "role": "Frontend Developer",
+    "timeline": "2 weeks",
+    "client": "Bintan Drift Tour Agent",
+    "overview": "Bintan Drift Tour Agent is a company profile website developed to establish a stronger digital presence for the business and provide potential customers with clear information about its travel services and destinations. The website focuses on presenting the brand professionally, improving service discoverability, and creating a more engaging experience for visitors across different devices.",
+    "challenge": [
+      "Presenting travel services and destination information in a clear and visually engaging way without overwhelming visitors.",
+      "Creating a responsive experience that remains consistent across desktop, tablet, and mobile devices.",
+      "Building a professional digital presence that reflects the company's identity and helps increase trust among potential customers.",
+      "Delivering the website within a short development timeline while maintaining code quality, performance, and visual consistency."
+    ],
+    "solution": [
+      "Developed the website using Next.js and TypeScript to provide a maintainable, scalable, and performance-oriented frontend architecture.",
+      "Built reusable and responsive UI components with Tailwind CSS to maintain consistent styling throughout the website.",
+      "Structured destination and service content to help visitors quickly discover relevant information and understand the company's offerings.",
+      "Implemented subtle animations and transitions using Motion to create a more engaging experience without affecting usability.",
+      "Optimized layouts and components for different screen sizes to provide a consistent browsing experience across devices."
+    ],
+    "outcome": [
+      "Delivered a modern and responsive company profile website within the planned two-week development period.",
+      "Established a dedicated digital presence that allows potential customers to explore Bintan Drift Tour Agent's services and destinations more easily.",
+      "Improved the overall presentation of the company's brand through a structured, professional, and visually engaging interface.",
+      "Created a reusable frontend structure that can support future content, destinations, and service expansions."
+    ],
+    "highlights": [
+      "Responsive Design",
+      "Reusable Components",
+      "Destination Showcase",
+      "Interactive Animations",
+      "Modern UI",
+      "Performance-Oriented Frontend"
+    ]
   },
   {
     "slug": "learning-management-system",
@@ -58,10 +151,27 @@
     "timeline": "6 weeks",
     "client": "Education platform concept",
     "overview": "Learning Management System is a web platform concept for managing courses, student progress, learning materials, and academic operations from one responsive interface.",
-    "challenge": ["Students and administrators needed different workflows in one platform.", "Course, progress, and content screens had to feel connected.", "The interface needed to avoid overwhelming users with too many actions."],
-    "solution": ["Planned a clear information architecture for courses and learning progress.", "Created role-aware UI patterns for student and admin experiences.", "Used typed frontend structure with Supabase-ready data planning."],
-    "outcome": ["Created a scalable LMS concept for academic workflows.", "Improved clarity across course delivery and progress tracking.", "Kept the interface responsive and easier to maintain."],
-    "highlights": ["Role-aware LMS structure", "Course and progress tracking", "Typed frontend architecture", "Responsive education dashboard"]
+    "challenge": [
+      "Students and administrators needed different workflows in one platform.",
+      "Course, progress, and content screens had to feel connected.",
+      "The interface needed to avoid overwhelming users with too many actions."
+    ],
+    "solution": [
+      "Planned a clear information architecture for courses and learning progress.",
+      "Created role-aware UI patterns for student and admin experiences.",
+      "Used typed frontend structure with Supabase-ready data planning."
+    ],
+    "outcome": [
+      "Created a scalable LMS concept for academic workflows.",
+      "Improved clarity across course delivery and progress tracking.",
+      "Kept the interface responsive and easier to maintain."
+    ],
+    "highlights": [
+      "Role-aware LMS structure",
+      "Course and progress tracking",
+      "Typed frontend architecture",
+      "Responsive education dashboard"
+    ]
   },
   {
     "slug": "clinic-appointment-portal",
@@ -77,10 +187,27 @@
     "timeline": "5 weeks",
     "client": "Healthcare service concept",
     "overview": "Clinic Appointment Portal is a scheduling system concept for clinics that need to manage appointments, doctor availability, and patient communication in one calm interface.",
-    "challenge": ["Healthcare scheduling must feel clear and trustworthy.", "Staff needed quick access to appointments, patients, and doctor availability.", "The booking flow had to avoid unnecessary complexity."],
-    "solution": ["Structured the portal around appointment states and schedule views.", "Designed patient and doctor information to be easy to scan.", "Planned a Node.js and PostgreSQL-ready architecture for operational data."],
-    "outcome": ["Created a practical workflow for clinic appointment coordination.", "Improved clarity for staff managing daily schedules.", "Kept the patient-facing flow simple and service-focused."],
-    "highlights": ["Appointment scheduling flow", "Doctor availability management", "Patient communication structure", "Service-first interface design"]
+    "challenge": [
+      "Healthcare scheduling must feel clear and trustworthy.",
+      "Staff needed quick access to appointments, patients, and doctor availability.",
+      "The booking flow had to avoid unnecessary complexity."
+    ],
+    "solution": [
+      "Structured the portal around appointment states and schedule views.",
+      "Designed patient and doctor information to be easy to scan.",
+      "Planned a Node.js and PostgreSQL-ready architecture for operational data."
+    ],
+    "outcome": [
+      "Created a practical workflow for clinic appointment coordination.",
+      "Improved clarity for staff managing daily schedules.",
+      "Kept the patient-facing flow simple and service-focused."
+    ],
+    "highlights": [
+      "Appointment scheduling flow",
+      "Doctor availability management",
+      "Patient communication structure",
+      "Service-first interface design"
+    ]
   },
   {
     "slug": "apple-health-companion",
@@ -96,9 +223,26 @@
     "timeline": "3 weeks",
     "client": "iOS health concept",
     "overview": "Apple Health Companion is an iOS product concept that presents health insights, daily activity summaries, and wearable data in a focused Apple ecosystem experience.",
-    "challenge": ["Health data can become noisy when too many metrics appear at once.", "Users needed quick daily insights instead of dense reports.", "The interface had to feel calm, readable, and mobile-native."],
-    "solution": ["Designed focused summary cards for daily activity and health signals.", "Planned HealthKit integration around meaningful user-facing insights.", "Used lightweight hierarchy aligned with native iOS interaction patterns."],
-    "outcome": ["Made connected health information easier to understand.", "Reduced cognitive load through focused daily summaries.", "Created a cleaner foundation for a native iOS health companion."],
-    "highlights": ["HealthKit integration concept", "Daily activity summaries", "Native iOS interaction patterns", "Focused health insight layout"]
+    "challenge": [
+      "Health data can become noisy when too many metrics appear at once.",
+      "Users needed quick daily insights instead of dense reports.",
+      "The interface had to feel calm, readable, and mobile-native."
+    ],
+    "solution": [
+      "Designed focused summary cards for daily activity and health signals.",
+      "Planned HealthKit integration around meaningful user-facing insights.",
+      "Used lightweight hierarchy aligned with native iOS interaction patterns."
+    ],
+    "outcome": [
+      "Made connected health information easier to understand.",
+      "Reduced cognitive load through focused daily summaries.",
+      "Created a cleaner foundation for a native iOS health companion."
+    ],
+    "highlights": [
+      "HealthKit integration concept",
+      "Daily activity summaries",
+      "Native iOS interaction patterns",
+      "Focused health insight layout"
+    ]
   }
 ]
