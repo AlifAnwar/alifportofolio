@@ -5,12 +5,12 @@
     "description": "A responsive mosque information platform for prayer schedules, daily prayers, hadith collections, and community donations.",
     "stack": ["Next.js", "TypeScript", "Tailwind CSS"],
     "imageSrc": [
-      "/assets/images/project/web/alkahfi/home.png",
-      "/assets/images/project/web/alkahfi/home1.png",
-      "/assets/images/project/web/alkahfi/sholat.png",
-      "/assets/images/project/web/alkahfi/prayer.png",
-      "/assets/images/project/web/alkahfi/hadish.png",
-      "/assets/images/project/web/alkahfi/hadish1.png"
+      "/assets/images/project/Web/Alkahfi/home.png",
+      "/assets/images/project/Web/Alkahfi/home1.png",
+      "/assets/images/project/Web/Alkahfi/sholat.png",
+      "/assets/images/project/Web/Alkahfi/prayer.png",
+      "/assets/images/project/Web/Alkahfi/hadish.png",
+      "/assets/images/project/Web/Alkahfi/hadish1.png"
     ],
     "liveUrl": "https://alkahfimuslimcenter.vercel.app/",
     "sourceUrl": "https://github.com",
@@ -49,13 +49,13 @@
     "description": "A responsive language learning platform for Chinese language learners.",
     "stack": ["Next.js", "TypeScript", "Redux", "Tailwind CSS", "Motion"],
     "imageSrc": [
-      "/assets/images/project/web/xueinmandarin/home1.png",
-      "/assets/images/project/web/xueinmandarin/home2.png",
-      "/assets/images/project/web/xueinmandarin/home3.png",
-      "/assets/images/project/web/xueinmandarin/challenge1.png",
-      "/assets/images/project/web/xueinmandarin/challenge2.png",
-      "/assets/images/project/web/xueinmandarin/challenge3.png",
-      "/assets/images/project/web/xueinmandarin/challenge4.png"
+      "/assets/images/project/Web/xueinmandarin/home1.png",
+      "/assets/images/project/Web/xueinmandarin/home2.png",
+      "/assets/images/project/Web/xueinmandarin/home3.png",
+      "/assets/images/project/Web/xueinmandarin/challenge1.png",
+      "/assets/images/project/Web/xueinmandarin/challenge2.png",
+      "/assets/images/project/Web/xueinmandarin/challenge3.png",
+      "/assets/images/project/Web/xueinmandarin/challenge4.png"
     ],
     "liveUrl": "https://xueinmandarin.vercel.app/",
     "sourceUrl": "https://github.com",
@@ -93,13 +93,13 @@
     "description": "A responsive company profile website designed to strengthen Bintan Drift Tour Agent's digital presence and showcase its travel services and destinations.",
     "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Motion"],
     "imageSrc": [
-      "/assets/images/project/web/bintanDrift/home1.png",
-      "/assets/images/project/web/bintanDrift/home2.png",
-      "/assets/images/project/web/bintanDrift/home3.png",
-      "/assets/images/project/web/bintanDrift/home4.png",
-      "/assets/images/project/web/bintanDrift/home5.png",
-      "/assets/images/project/web/bintanDrift/destination.png",
-      "/assets/images/project/web/bintanDrift/destination1.png"
+      "/assets/images/project/Web/bintanDrift/home1.png",
+      "/assets/images/project/Web/bintanDrift/home2.png",
+      "/assets/images/project/Web/bintanDrift/home3.png",
+      "/assets/images/project/Web/bintanDrift/home4.png",
+      "/assets/images/project/Web/bintanDrift/home5.png",
+      "/assets/images/project/Web/bintanDrift/destination.png",
+      "/assets/images/project/Web/bintanDrift/destinationDetail.png"
     ],
     "liveUrl": "https://bintandrifttour.id/",
     "sourceUrl": "https://github.com",
@@ -144,10 +144,10 @@
     "description": "A streamlined LMS experience for course delivery, student progress tracking, and academic operations with a clean responsive interface.",
     "stack": ["Next.js", "TypeScript", "Redux", "Tailwind CSS", "Motion"],
     "imageSrc": [
-      "/assets/images/project/web/bengkelkoding/1.png",
-      "/assets/images/project/web/bengkelkoding/2.png",
-      "/assets/images/project/web/bengkelkoding/3.png",
-      "/assets/images/project/web/bengkelkoding/4.png"
+      "/assets/images/project/Web/BengkelKoding/1.png",
+      "/assets/images/project/Web/BengkelKoding/2.png",
+      "/assets/images/project/Web/BengkelKoding/3.png",
+      "/assets/images/project/Web/BengkelKoding/4.png"
     ],
     "liveUrl": "https://bengkelkoding.dinus.id/",
     "sourceUrl": "https://github.com",
