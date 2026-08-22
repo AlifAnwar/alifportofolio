@@ -111,7 +111,7 @@ export default async function ProjectDetailPage({
             </Link>
 
             <Link
-              href="/#contact"
+              href="https://www.linkedin.com/in/muhamad-alif-anwar/"
               className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/25 transition-transform hover:-translate-y-0.5"
             >
               Discuss Similar Project
@@ -124,7 +124,7 @@ export default async function ProjectDetailPage({
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-primary">
                 Project Detail
               </p>
-              <h1 className="mt-5 max-w-5xl font-display text-5xl font-extrabold leading-[1.02] tracking-[-0.06em] text-foreground sm:text-6xl lg:text-7xl">
+              <h1 className="mt-5 max-w-5xl font-display text-5xl font-extrabold  text-foreground sm:text-6xl lg:text-7xl">
                 {project.name}
               </h1>
               <p className="mt-6 max-w-3xl text-lg leading-8 text-muted-foreground sm:text-xl">
@@ -186,12 +186,12 @@ export default async function ProjectDetailPage({
               <div className="mt-7 flex flex-wrap gap-4">
                 <Link
                   href={project.liveUrl}
+                  target="_blank"
                   className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/25 transition-transform hover:-translate-y-0.5"
                 >
                   Live Preview
                   <ArrowUpRight className="size-4" />
                 </Link>
-               
               </div>
             </div>
 
@@ -249,10 +249,7 @@ export default async function ProjectDetailPage({
 
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {project.highlights.map((highlight) => (
-                <div
-                  key={highlight}
-                  className="glass-card rounded-3xl p-5"
-                >
+                <div key={highlight} className="glass-card rounded-3xl p-5">
                   <CheckCircle2 className="size-5 text-primary" />
                   <p className="mt-4 text-sm font-semibold leading-6 text-foreground">
                     {highlight}

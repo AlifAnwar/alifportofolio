@@ -14,10 +14,10 @@
     ],
     "liveUrl": "https://alkahfimuslimcenter.vercel.app/",
     "sourceUrl": "https://github.com",
-    "year": "2026",
+    "year": "2025",
     "category": "Web App",
     "role": "Frontend Developer",
-    "timeline": "2 weeks",
+    "timeline": "A weeks",
     "client": "Al Kahfi Mosque, Bintan",
     "overview": "Al Kahfi Mosque Platform brings essential worship information into one accessible website, helping the community check prayer times, browse daily prayers, explore hadith collections, and access donation information.",
     "challenge": [
@@ -47,7 +47,7 @@
     "slug": "xue-in-mandarin",
     "name": "Xue in Mandarin Learning Platform",
     "description": "A responsive language learning platform for Chinese language learners.",
-    "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Motion"],
+    "stack": ["Next.js", "TypeScript", "Redux", "Tailwind CSS", "Motion"],
     "imageSrc": [
       "/assets/images/project/web/xueinmandarin/home1.png",
       "/assets/images/project/web/xueinmandarin/home2.png",
@@ -62,7 +62,7 @@
     "year": "2026",
     "category": "Web App",
     "role": "Frontend Developer",
-    "timeline": "4 weeks",
+    "timeline": "2 weeks",
     "client": "Personal Project",
     "overview": "Has been use for more 100 users, xue in Mandarin Learning Platform brings essential language learning resources into one accessible website, helping learners improve their Chinese proficiency through interactive 4 lessons and practice exercises.",
     "challenge": [
@@ -93,20 +93,20 @@
     "description": "A responsive company profile website designed to strengthen Bintan Drift Tour Agent's digital presence and showcase its travel services and destinations.",
     "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Motion"],
     "imageSrc": [
-      "/assets/images/project/web/bintandrifttouragent/home1.png",
-      "/assets/images/project/web/bintandrifttouragent/home2.png",
-      "/assets/images/project/web/bintandrifttouragent/home3.png",
-      "/assets/images/project/web/bintandrifttouragent/home4.png",
-      "/assets/images/project/web/bintandrifttouragent/home5.png",
-      "/assets/images/project/web/bintandrifttouragent/destination.png",
-      "/assets/images/project/web/bintandrifttouragent/destination1.png"
+      "/assets/images/project/web/bintanDrift/home1.png",
+      "/assets/images/project/web/bintanDrift/home2.png",
+      "/assets/images/project/web/bintanDrift/home3.png",
+      "/assets/images/project/web/bintanDrift/home4.png",
+      "/assets/images/project/web/bintanDrift/home5.png",
+      "/assets/images/project/web/bintanDrift/destination.png",
+      "/assets/images/project/web/bintanDrift/destination1.png"
     ],
     "liveUrl": "https://bintandrifttour.id/",
     "sourceUrl": "https://github.com",
     "year": "2026",
     "category": "Company Profile",
     "role": "Frontend Developer",
-    "timeline": "2 weeks",
+    "timeline": "A weeks",
     "client": "Bintan Drift Tour Agent",
     "overview": "Bintan Drift Tour Agent is a company profile website developed to establish a stronger digital presence for the business and provide potential customers with clear information about its travel services and destinations. The website focuses on presenting the brand professionally, improving service discoverability, and creating a more engaging experience for visitors across different devices.",
     "challenge": [
@@ -137,20 +137,26 @@
       "Performance-Oriented Frontend"
     ]
   },
+
   {
-    "slug": "learning-management-system",
-    "name": "Learning Management System",
+    "slug": "bengkelkoding-learning-management-system",
+    "name": "Bengkel Koding LMS",
     "description": "A streamlined LMS experience for course delivery, student progress tracking, and academic operations with a clean responsive interface.",
-    "stack": ["Next.js", "TypeScript", "Supabase"],
-    "imageSrc": ["/assets/images/example.png"],
-    "liveUrl": "/#contact",
+    "stack": ["Next.js", "TypeScript", "Redux", "Tailwind CSS", "Motion"],
+    "imageSrc": [
+      "/assets/images/project/web/bengkelkoding/1.png",
+      "/assets/images/project/web/bengkelkoding/2.png",
+      "/assets/images/project/web/bengkelkoding/3.png",
+      "/assets/images/project/web/bengkelkoding/4.png"
+    ],
+    "liveUrl": "https://bengkelkoding.dinus.id/",
     "sourceUrl": "https://github.com",
     "year": "2025",
     "category": "Platform",
     "role": "Full-stack Developer",
     "timeline": "6 weeks",
     "client": "Education platform concept",
-    "overview": "Learning Management System is a web platform concept for managing courses, student progress, learning materials, and academic operations from one responsive interface.",
+    "overview": "Bengkel Koding LMS is a web platform concept for managing courses, student progress, learning materials, and academic operations from one responsive interface.",
     "challenge": [
       "Students and administrators needed different workflows in one platform.",
       "Course, progress, and content screens had to feel connected.",
@@ -158,8 +164,7 @@
     ],
     "solution": [
       "Planned a clear information architecture for courses and learning progress.",
-      "Created role-aware UI patterns for student and admin experiences.",
-      "Used typed frontend structure with Supabase-ready data planning."
+      "Created role-aware UI patterns for student and admin experiences."
     ],
     "outcome": [
       "Created a scalable LMS concept for academic workflows.",
@@ -173,76 +178,186 @@
       "Responsive education dashboard"
     ]
   },
+
   {
-    "slug": "clinic-appointment-portal",
-    "name": "Clinic Appointment Portal",
-    "description": "A healthcare scheduling system for appointment booking, doctor availability management, and patient communication with a calm service-first interface.",
-    "stack": ["React", "Node.js", "PostgreSQL"],
-    "imageSrc": ["/assets/images/example.png"],
-    "liveUrl": "/#contact",
+    "slug": "fokusin-pomodoro-app",
+    "name": "Fokusin",
+    "description": "A gamified Pomodoro app that turns focused time into collectible egg and character rewards, helping users build consistent productivity habits.",
+    "stack": ["SwiftUI", "SwiftData", "MVVM", "iOS", "iPadOS"],
+    "imageSrc": [
+      "/assets/images/project/Mobile/Fokusin/fokusin.png",
+      "/assets/images/project/Mobile/Fokusin/fokusin2.png"
+    ],
+    "liveUrl": "https://www.linkedin.com/posts/muhamad-alif-anwar_fokusin-pomodoro-iphone-activity-7363951350684008448-Hbie?utm_source=share&utm_medium=member_desktop&rcm=ACoAADCyDIcBTbY95eLjNpwZgXhrDCVl2nrQ31I",
     "sourceUrl": "https://github.com",
-    "year": "2025",
-    "category": "Business App",
-    "role": "Frontend Developer",
-    "timeline": "5 weeks",
-    "client": "Healthcare service concept",
-    "overview": "Clinic Appointment Portal is a scheduling system concept for clinics that need to manage appointments, doctor availability, and patient communication in one calm interface.",
+    "year": "2026",
+    "category": "iOS App",
+    "platform": "mobile",
+    "role": "iOS Developer & UI Designer",
+    "timeline": "2 weeks",
+    "client": "Personal Project",
+    "overview": "Fokusin is a SwiftUI-based Pomodoro app designed to make deep work more engaging through progressive rewards. As users accumulate focus time, they unlock collectible eggs and characters that visualize their progress. I handled the product end to end, from interface design and MVVM architecture to SwiftData persistence, responsive iPhone and iPad layouts, and App Store readiness.",
     "challenge": [
-      "Healthcare scheduling must feel clear and trustworthy.",
-      "Staff needed quick access to appointments, patients, and doctor availability.",
-      "The booking flow had to avoid unnecessary complexity."
+      "Traditional focus timers often provide little motivation beyond completing a session.",
+      "Timer history, statistics, and collectible progress needed to remain consistent between app launches.",
+      "The interface had to adapt comfortably to different iPhone and iPad screen sizes while keeping the timer easy to read."
     ],
     "solution": [
-      "Structured the portal around appointment states and schedule views.",
-      "Designed patient and doctor information to be easy to scan.",
-      "Planned a Node.js and PostgreSQL-ready architecture for operational data."
+      "Built preset and custom Pomodoro timers with animated progress and clear session states.",
+      "Structured the application with MVVM and used SwiftData for persistent sessions, statistics, and unlock progress.",
+      "Created a progressive egg and character reward system based on total accumulated focus time.",
+      "Designed responsive SwiftUI layouts and prepared the product for App Store distribution."
     ],
     "outcome": [
-      "Created a practical workflow for clinic appointment coordination.",
-      "Improved clarity for staff managing daily schedules.",
-      "Kept the patient-facing flow simple and service-focused."
+      "Delivered an end-to-end productivity experience that connects focused work with visible rewards.",
+      "Made long-term progress easier to understand through history, statistics, and collectible states.",
+      "Created a maintainable native architecture that supports future timers, characters, and progression features."
     ],
     "highlights": [
-      "Appointment scheduling flow",
-      "Doctor availability management",
-      "Patient communication structure",
-      "Service-first interface design"
+      "Preset and custom focus timers",
+      "Animated timer progress",
+      "History and focus statistics",
+      "Progressive character collectibles",
+      "SwiftData persistence",
+      "Responsive iPhone and iPad layouts"
     ]
   },
+
   {
-    "slug": "apple-health-companion",
-    "name": "Apple Health Companion",
-    "description": "A connected iOS product concept that syncs health insights, daily activity summaries, and wearable data into a focused Apple ecosystem experience.",
-    "stack": ["SwiftUI", "HealthKit", "iOS"],
-    "imageSrc": ["/assets/images/example.png"],
-    "liveUrl": "/#contact",
+    "slug": "broceries-smart-grocery-app",
+    "name": "Broceries",
+    "description": "A smart grocery companion that recommends personalized shopping lists, tracks household stock, and alerts users before items run low or expire.",
+    "stack": ["SwiftUI", "SwiftData", "CoreLocation", "UserNotifications", "watchOS"],
+    "imageSrc": [
+      "/assets/images/project/Mobile/Broceries/broceries.png"
+    ],
+    "liveUrl": "https://www.linkedin.com/posts/muhamad-alif-anwar_dont-shop-blind-weve-got-you-weve-successfully-activity-7363955862689771543-5491?utm_source=share&utm_medium=member_desktop&rcm=ACoAADCyDIcBTbY95eLjNpwZgXhrDCVl2nrQ31I",
     "sourceUrl": "https://github.com",
-    "year": "2024",
-    "category": "iOS Product",
-    "role": "Product UI Developer",
-    "timeline": "3 weeks",
-    "client": "iOS health concept",
-    "overview": "Apple Health Companion is an iOS product concept that presents health insights, daily activity summaries, and wearable data in a focused Apple ecosystem experience.",
+    "year": "2026",
+    "category": "iOS & watchOS App",
+    "platform": "mobile",
+    "role": "iOS Developer & UI Designer",
+    "timeline": "2 weeks",
+    "client": "Personal Project",
+    "overview": "Broceries is a lightweight grocery and household inventory app that recommends personalized shopping lists based on a user's history and current needs. It tracks item availability at home, warns when stock is running low or approaching expiration, and uses CoreLocation to help users find nearby stores and markets. The experience extends across Apple devices, including Apple Watch, while keeping personal inventory data securely on-device.",
     "challenge": [
-      "Health data can become noisy when too many metrics appear at once.",
-      "Users needed quick daily insights instead of dense reports.",
-      "The interface had to feel calm, readable, and mobile-native."
+      "Household inventory changes frequently and is difficult to track without adding friction to everyday routines.",
+      "Shopping recommendations needed to reflect both purchase history and the user's current stock levels.",
+      "Low-stock, expiration, location, and cross-device features had to feel useful without making the app heavy or intrusive."
     ],
     "solution": [
-      "Designed focused summary cards for daily activity and health signals.",
-      "Planned HealthKit integration around meaningful user-facing insights.",
-      "Used lightweight hierarchy aligned with native iOS interaction patterns."
+      "Created a personalized shopping-list flow informed by item history and household needs.",
+      "Built inventory tracking for item availability, stock levels, and expiration dates.",
+      "Added local notifications for products that are running low or nearing expiration.",
+      "Used CoreLocation for nearby store discovery and extended essential information to Apple Watch."
     ],
     "outcome": [
-      "Made connected health information easier to understand.",
-      "Reduced cognitive load through focused daily summaries.",
-      "Created a cleaner foundation for a native iOS health companion."
+      "Combined grocery planning and household inventory into one focused native experience.",
+      "Helped reduce forgotten purchases and potential food waste through timely stock and expiration reminders.",
+      "Kept the product lightweight and privacy-conscious while supporting connected Apple devices."
     ],
     "highlights": [
-      "HealthKit integration concept",
-      "Daily activity summaries",
-      "Native iOS interaction patterns",
-      "Focused health insight layout"
+      "Personalized shopping recommendations",
+      "Household inventory tracking",
+      "Low-stock and expiration alerts",
+      "Nearby store discovery",
+      "Apple Watch support",
+      "On-device data storage"
+    ]
+  },
+
+  {
+    "slug": "orenji-basketball-posture-coach",
+    "name": "Orenji",
+    "description": "An AI-assisted basketball posture coach that evaluates shooting form in real time and provides immediate visual, haptic, and Apple Watch feedback.",
+    "stack": ["SwiftUI", "Vision", "AVFoundation", "Core Haptics", "watchOS"],
+    "imageSrc": [
+      "/assets/images/project/Mobile/Orenji/orenji.png"
+    ],
+    "liveUrl": "https://www.linkedin.com/posts/muhamad-alif-anwar_meet-orenji-a-mobile-app-that-helps-basketball-activity-7363961596987031552-e1-O?utm_source=share&utm_medium=member_desktop&rcm=ACoAADCyDIcBTbY95eLjNpwZgXhrDCVl2nrQ31I",
+    "sourceUrl": "https://github.com",
+    "year": "2026",
+    "category": "iOS & watchOS App",
+    "platform": "mobile",
+    "role": "iOS Developer & UI Designer",
+    "timeline": "2 weeks",
+    "client": "Personal Project",
+    "overview": "Orenji is an iOS basketball training app built with SwiftUI and Vision to evaluate shooting posture from a live camera feed or recorded video. It analyzes important body angles across the shoulders, elbows, hips, and knees, then translates the results into immediate visual and haptic guidance. Apple Watch support keeps posture status visible on the user's wrist and provides a tap whenever their form needs correction.",
+    "challenge": [
+      "Basketball players often need immediate, understandable feedback to correct shooting form during practice.",
+      "Raw pose landmarks and joint angles had to be translated into useful posture guidance instead of overwhelming technical data.",
+      "Camera analysis, interface updates, haptics, and Apple Watch feedback needed to work together with minimal interruption."
+    ],
+    "solution": [
+      "Used Vision pose detection to analyze shoulder, elbow, hip, and knee angles from live or recorded footage.",
+      "Designed a real-time SwiftUI feedback layer that clearly communicates posture status and areas for correction.",
+      "Added haptic cues so players can react without continuously watching the screen.",
+      "Extended posture status and correction alerts to Apple Watch for more accessible feedback during training."
+    ],
+    "outcome": [
+      "Created an accessible training experience that turns pose-analysis data into actionable shooting feedback.",
+      "Enabled athletes to review both live and recorded movement while receiving immediate correction cues.",
+      "Expanded the coaching experience beyond the phone through synchronized visual and wrist-based feedback."
+    ],
+    "highlights": [
+      "Real-time posture analysis",
+      "Live camera and recorded video input",
+      "Multi-joint angle evaluation",
+      "Visual and haptic corrections",
+      "Apple Watch posture status",
+      "Vision-powered pose detection"
+    ]
+  },
+
+  {
+    "slug": "morro-japan-living-simulator",
+    "name": "Morro",
+    "description": "An AI-powered living-abroad simulator that helps first-timers explore the realities of living in Japan through personalized scenarios and interactive conversations.",
+    "stack": [
+      "SwiftUI",
+      "SwiftData",
+      "Apple Intelligence",
+      "OpenAI API",
+      "MapKit",
+      "WidgetKit",
+      "ActivityKit"
+    ],
+    "imageSrc": [
+      "/assets/images/project/Mobile/Morro/morro.png"
+    ],
+    "liveUrl": "/-",
+    "sourceUrl": "https://github.com",
+    "year": "2026",
+    "category": "AI-powered iOS App",
+    "platform": "mobile",
+    "role": "iOS Developer & UI Designer",
+    "timeline": "2 weeks",
+    "client": "Personal Project",
+    "overview": "Morro is an iOS simulation experience for first-timers who are considering living in Japan. Instead of relying only on second-hand stories or idealized expectations, users can explore realistic situations based on their preferences and circumstances before making a major decision. Apple Intelligence and the OpenAI API power interactive conversations, while MapKit, widgets, and Live Activities keep location-aware scenarios and active experiences accessible throughout the journey.",
+    "challenge": [
+      "People planning to live abroad often face too much fragmented information and struggle to identify what is relevant to their own situation.",
+      "Second-hand experiences and idealized expectations can make it difficult to form a realistic picture of daily life in Japan.",
+      "The simulation needed to feel personal and interactive while keeping scenario progress and recommendations easy to revisit."
+    ],
+    "solution": [
+      "Designed preference-based simulations that help users explore realistic living situations and compare options before moving abroad.",
+      "Combined Apple Intelligence with the OpenAI API to create interactive AI conversations that respond to the user's choices and scenario context.",
+      "Used SwiftData to persist user preferences, simulation progress, conversation context, and saved decisions on-device.",
+      "Integrated MapKit to connect scenarios with relevant places and location context across Japan.",
+      "Built WidgetKit and Live Activity experiences so users can follow active simulations and key updates outside the main app."
+    ],
+    "outcome": [
+      "Created a more grounded way for first-time movers to understand the practical experience of living in Japan.",
+      "Turned broad relocation information into personalized scenarios and interactive decision support.",
+      "Delivered a native iOS foundation that connects AI conversations, location context, persistent progress, widgets, and Live Activities."
+    ],
+    "highlights": [
+      "AI-powered interactive conversations",
+      "Personalized living simulations",
+      "Preference-based option filtering",
+      "Japan location exploration with MapKit",
+      "Persistent simulation progress",
+      "Widgets and Live Activities"
     ]
   }
 ]

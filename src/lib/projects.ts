@@ -11,6 +11,7 @@ export type ProjectItem = {
   name: string;
   outcome: string[];
   overview: string;
+  platform?: "web" | "mobile";
   role: string;
   sourceUrl: string;
   slug: string;
@@ -21,6 +22,30 @@ export type ProjectItem = {
 };
 
 export const projects = projectsData as ProjectItem[];
+
+export function getProjectPlatform(
+  project: ProjectItem,
+): NonNullable<ProjectItem["platform"]> {
+  if (project.platform) return project.platform;
+
+  const mobileKeywords = [
+    "android",
+    "flutter",
+    "ios",
+    "kotlin",
+    "mobile",
+    "react native",
+    "swift",
+    "swiftui",
+  ];
+  const projectTechnology = [project.category, ...project.stack]
+    .join(" ")
+    .toLowerCase();
+
+  return mobileKeywords.some((keyword) => projectTechnology.includes(keyword))
+    ? "mobile"
+    : "web";
+}
 
 export function getProjectBySlug(slug: string) {
   return projects.find((project) => project.slug === slug);

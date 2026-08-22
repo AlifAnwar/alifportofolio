@@ -141,7 +141,7 @@ export function Hero() {
           </div>
 
           <motion.a
-            href="#contact"
+            href="https://www.linkedin.com/in/muhamad-alif-anwar/"
             whileHover={{ y: -2, scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
             className="mt-5 inline-flex items-center gap-3 rounded-2xl bg-[#485600] px-7 py-3 text-lg font-medium text-white shadow-[0_18px_40px_rgba(72,86,0,0.24)] transition-shadow hover:shadow-[0_24px_52px_rgba(72,86,0,0.32)] sm:mt-0"

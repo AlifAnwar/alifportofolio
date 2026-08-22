@@ -97,16 +97,9 @@ export function Projects() {
                   href={`/projects/${project.slug}`}
                   className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors hover:text-primary/80"
                 >
-                  View Case Study <ArrowUpRight className="size-4" />
+                  details <ArrowUpRight className="size-4" />
                 </Link>
-                <a
-                  href={project.sourceUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
-                >
-                  <GitBranch className="size-4" /> Source Code
-                </a>
+                
               </div>
             </motion.article>
           ))}

@@ -28,7 +28,7 @@ export function Contact() {
           className="mx-auto max-w-4xl text-center"
         >
           <SectionLabel>Contact</SectionLabel>
-          <h2 className="mx-auto mt-6 max-w-4xl font-display text-5xl font-extrabold leading-[1.02] tracking-[-0.06em] text-foreground sm:text-6xl lg:text-7xl">
+          <h2 className="mx-auto mt-6 max-w-4xl font-display text-5xl font-extrabold  text-foreground sm:text-6xl lg:text-7xl">
             LET&apos;S WORK TOGETHER
           </h2>
           <p className="mx-auto mt-6 max-w-3xl text-xl leading-8 text-muted-foreground sm:text-2xl">
@@ -45,20 +45,20 @@ export function Contact() {
           className="mt-10 flex flex-wrap justify-center gap-4"
         >
           <motion.a
-            href="mailto:hello@alif.dev"
+            href="mailto:muhamadalifanwar@gmail.com"
             whileHover={{ scale: 1.04, y: -2 }}
             whileTap={{ scale: 0.96 }}
-            className="rounded-full bg-primary px-8 py-4 text-lg font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition-shadow hover:shadow-primary/50"
+            className="rounded-full bg-primary px-8 flex items-center justify-center h-10 text-lg font-semibold text-primary-foreground shadow-lg shadow-primary/30 transition-shadow hover:shadow-primary/50"
           >
             Contact Me
           </motion.a>
           <motion.a
-            href="https://www.upwork.com/freelancers"
+            href="https://www.linkedin.com/in/muhamad-alif-anwar/"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.04, y: -2 }}
             whileTap={{ scale: 0.96 }}
-            className="glass-card rounded-full px-8 py-4 text-lg font-semibold text-foreground transition-colors hover:border-primary/30"
+            className="glass-card rounded-full px-8 flex items-center justify-center h-10 text-lg font-semibold text-foreground transition-colors hover:border-primary/30"
           >
             Hire Me
           </motion.a>

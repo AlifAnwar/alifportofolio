@@ -38,7 +38,7 @@ export function Navbar() {
   );
 
   const contactHref = useMemo(
-    () => (isHome ? "#contact" : "/#contact"),
+    () => (isHome ? "https://www.linkedin.com/in/muhamad-alif-anwar/" : "https://www.linkedin.com/in/muhamad-alif-anwar/"),
     [isHome],
   );
 
