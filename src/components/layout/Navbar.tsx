@@ -83,21 +83,29 @@ export function Navbar() {
         </ul>
 
         <div className="hidden items-center gap-3 md:flex">
-          <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.96 }}>
+          <motion.div
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.96 }}
+            transition={{ duration: 0.15, ease: "easeOut" }}
+          >
             <a
               href={resumeHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-md shadow-primary/25 transition-shadow duration-300 hover:shadow-primary/40"
+              className="rounded-full border border-primary/25 bg-white/45 px-5 py-2 text-sm font-medium text-foreground transition-[background-color,border-color,color] duration-150 ease-out hover:border-primary/35 hover:bg-primary/10 hover:text-primary"
             >
               Resume
             </a>
           </motion.div>
 
-          <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.96 }}>
+          <motion.div
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.96 }}
+            transition={{ duration: 0.15, ease: "easeOut" }}
+          >
             <Link
               href={contactHref}
-              className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-md shadow-primary/25 transition-shadow duration-300 hover:shadow-primary/40"
+              className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-md shadow-primary/25 transition-shadow duration-150 ease-out hover:shadow-primary/40"
             >
               Hire Me
             </Link>
@@ -166,7 +174,7 @@ export function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsMenuOpen(false)}
-                className="relative mt-3 block rounded-2xl bg-primary px-4 py-3 text-center text-sm font-semibold text-primary-foreground shadow-md shadow-primary/25 transition-[box-shadow,scale] duration-150 ease-out hover:shadow-lg hover:shadow-primary/40 active:scale-[0.96] motion-reduce:active:scale-100"
+                className="relative mt-3 block rounded-2xl border border-primary/25 bg-white px-4 py-3 text-center text-sm font-medium text-foreground transition-[background-color,border-color,color,scale] duration-150 ease-out hover:border-primary/35 hover:bg-primary/10 hover:text-primary active:scale-[0.96] motion-reduce:active:scale-100"
               >
                 Resume
               </a>
