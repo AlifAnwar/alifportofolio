@@ -6,10 +6,10 @@ import { motion } from "motion/react";
 import { SectionLabel } from "@/components/shared/SectionLabel";
 
 const contactLinks = [
-  { label: "Email", href: "mailto:hello@alif.dev", icon: Mail },
-  { label: "LinkedIn", href: "https://www.linkedin.com", icon: Link },
-  { label: "GitHub", href: "https://github.com", icon: GitBranch },
-  { label: "Upwork", href: "https://www.upwork.com/freelancers", icon: Briefcase },
+  { label: "Email", href: "mailto:muhamadalifanwar@gmail.com", icon: Mail },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/muhamad-alif-anwar/", icon: Link },
+  { label: "GitHub", href: "https://github.com/AlifAnwar", icon: GitBranch },
+  { label: "Upwork", href: "https://contra.com/muhamad_alif_anwar_y7fqvswe?referralExperimentNid=DEFAULT_REFERRAL_PROGRAM&referrerUsername=muhamad_alif_anwar_y7fqvswe", icon: Briefcase },
 ];
 
 export function Contact() {
