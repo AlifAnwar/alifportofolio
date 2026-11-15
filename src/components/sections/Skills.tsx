@@ -10,14 +10,14 @@ const skillGroups = [
     title: "Web development",
     description:
       "Responsive interfaces and reusable components that stay clear as products evolve.",
-    technologies: ["React", "Tailwind CSS", "Laravel"],
+    technologies: ["React", "Tailwind CSS", "Laravel", "Node"],
     icon: Globe,
   },
   {
     title: "Mobile development",
     description:
       "Native iOS and cross-platform experiences designed around practical user flows.",
-    technologies: ["SwiftUI", "Flutter"],
+    technologies: ["SwiftUI", "UiKit", "Flutter"],
     icon: Smartphone,
   },
   {
