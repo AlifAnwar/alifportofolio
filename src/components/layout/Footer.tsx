@@ -15,7 +15,7 @@ export function Footer() {
         <p className="text-sm text-muted-foreground">
           (c) 2026 Alif. Crafted with modern design and clean development.
         </p>
-        <nav className="flex gap-6">
+        <nav className="flex flex-wrap justify-center gap-x-4 gap-y-2 sm:justify-end sm:gap-x-6">
           {footerLinks.map((link) => {
             const href = isHome ? `#${link.toLowerCase()}` : `/#${link.toLowerCase()}`;
 

@@ -1,32 +1,32 @@
 "use client";
 
-import {
-  Braces,
-  Code2,
-  Database,
-  GitBranch,
-  Layers,
-  Smartphone,
-} from "lucide-react";
+import { Database, Globe, Smartphone } from "lucide-react";
 import { motion, type Variants } from "motion/react";
 
 import { SectionLabel } from "@/components/shared/SectionLabel";
 
-const skillChips = [
-  "Frontend Engineering",
-  "Mobile Development",
-  "Ios Libraries",
-  "API Integration",
-  "Git Workflow",
-];
-
-const techStack = [
-  { name: "React", icon: Braces },
-   { name: "SwiftUI", icon: Code2                                                                                                                                                                                                                                                                                                                                    },
-  { name: "Flutter", icon: Smartphone },
-  { name: "Tailwind", icon: Layers },
-  { name: "Firebase", icon: Database },
-  { name: "Git", icon: GitBranch },
+const skillGroups = [
+  {
+    title: "Web development",
+    description:
+      "Responsive interfaces and reusable components that stay clear as products evolve.",
+    technologies: ["React", "Tailwind CSS", "Laravel"],
+    icon: Globe,
+  },
+  {
+    title: "Mobile development",
+    description:
+      "Native iOS and cross-platform experiences designed around practical user flows.",
+    technologies: ["SwiftUI", "Flutter"],
+    icon: Smartphone,
+  },
+  {
+    title: "Integration and delivery",
+    description:
+      "APIs, backend services, and version-controlled workflows that connect development to release.",
+    technologies: ["Firebase", "App Store Connect", "Google Play","REST APIs", "Git"],
+    icon: Database,
+  },
 ];
 
 const container: Variants = {
@@ -55,65 +55,78 @@ const item: Variants = {
 
 export function Skills() {
   return (
-    <section id="skills" className="px-6 py-24 sm:py-28">
-      <div className="mx-auto max-w-7xl">
+    <section
+      id="skills"
+      aria-labelledby="skills-heading"
+      className="px-6 py-24 sm:py-28"
+    >
+      <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:gap-20">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-          className="mx-auto mb-16 max-w-4xl text-center"
+          className="max-w-xl lg:pt-2"
         >
           <SectionLabel>Skills</SectionLabel>
-          <h2 className="mx-auto mt-6 max-w-4xl font-display text-5xl font-extrabold leading-[1.08] text-foreground sm:text-6xl">
-            Modern technologies for scalable digital products.
+          <h2
+            id="skills-heading"
+            className="mt-6 text-balance font-display text-4xl font-extrabold leading-[1.1] text-foreground sm:text-5xl"
+          >
+            A focused stack for reliable <span className="text-brand-text">web and mobile</span> products.
           </h2>
-          <p className="mx-auto mt-6 max-w-3xl text-xl leading-8 text-muted-foreground sm:text-2xl">
-            I combine practical engineering with clean interface work to ship
-            web and mobile products that stay maintainable.
+          <p className="mt-6 max-w-lg text-pretty text-lg leading-[1.6] text-muted-foreground">
+            My work centers on interface engineering, mobile development, and
+            the integrations needed to move a product from idea to release.
           </p>
         </motion.div>
 
-        <motion.div
+        <motion.ul
+          aria-label="Core capabilities and technologies"
           variants={container}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
-          className="mx-auto mb-20 flex max-w-7xl flex-wrap justify-center gap-4"
+          viewport={{ once: true, margin: "-60px" }}
+          className="border-t border-border"
         >
-          {skillChips.map((chip) => (
-            <motion.span
-              key={chip}
+          {skillGroups.map(({ title, description, technologies, icon: Icon }) => (
+            <motion.li
+              key={title}
               variants={item}
-              whileHover={{ y: -2 }}
-              className="rounded-full bg-white px-7 py-4 text-lg font-semibold text-foreground shadow-[0_16px_50px_rgba(0,0,0,0.05)]"
+              className="grid grid-cols-[auto_minmax(0,1fr)] gap-5 border-b border-border py-8 sm:gap-6 sm:py-10"
             >
-              {chip}
-            </motion.span>
-          ))}
-        </motion.div>
-
-        <motion.div
-          variants={container}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          className="grid grid-cols-2 gap-5 sm:grid-cols-3 lg:grid-cols-6"
-        >
-          {techStack.map(({ name, icon: Icon }) => (
-            <motion.div
-              key={name}
-              variants={item}
-              whileHover={{ y: -4, scale: 1.03 }}
-              className="flex min-h-36 flex-col items-center justify-center gap-5 rounded-3xl bg-white p-6 text-center shadow-[0_18px_60px_rgba(0,0,0,0.045)]"
-            >
-              <Icon className="size-8 text-primary" strokeWidth={1.8} />
-              <span className="text-lg font-bold text-muted-foreground">
-                {name}
+              <span className="flex size-12 shrink-0 items-center justify-center rounded-2xl bg-primary/10 text-primary">
+                <Icon aria-hidden="true" className="size-6" strokeWidth={2} />
               </span>
-            </motion.div>
+
+              <div className="min-w-0">
+                <h3 className="font-display text-2xl font-bold tracking-[-0.02em] text-foreground">
+                  {title}
+                </h3>
+                <p className="mt-3 max-w-2xl text-base leading-[1.6] text-muted-foreground sm:text-lg">
+                  {description}
+                </p>
+                <ul
+                  aria-label={`${title} technologies`}
+                  className="mt-5 flex flex-wrap gap-x-5 gap-y-2"
+                >
+                  {technologies.map((technology) => (
+                    <li
+                      key={technology}
+                      className="inline-flex items-center gap-2 text-sm font-semibold text-brand-text"
+                    >
+                      <span
+                        aria-hidden="true"
+                        className="size-1.5 rounded-full bg-primary"
+                      />
+                      {technology}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </motion.li>
           ))}
-        </motion.div>
+        </motion.ul>
       </div>
     </section>
   );

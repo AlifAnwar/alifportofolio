@@ -2,16 +2,19 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { Menu, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 
-const navLinks = ["Home", "Services", "Experience", "Skills", "Projects", "Contact"];
+const navLinks = ["Home", "Services", "Experience", "Skills", "Projects"];
+
+const resumeHref = "/assets/docs/Muhamad%20Alif%20Anwar%20-%20Resume%202026.pdf";
 
 export function Navbar() {
   const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const shouldReduceMotion = useReducedMotion();
   const isHome = pathname === "/";
 
   useEffect(() => {
@@ -79,18 +82,27 @@ export function Navbar() {
           })}
         </ul>
 
-        <motion.div
-          whileHover={{ scale: 1.03 }}
-          whileTap={{ scale: 0.97 }}
-          className="hidden md:block"
-        >
-          <Link
-            href={contactHref}
-            className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-md shadow-primary/25 transition-shadow duration-300 hover:shadow-primary/40"
-          >
-            Hire Me
-          </Link>
-        </motion.div>
+        <div className="hidden items-center gap-3 md:flex">
+          <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.96 }}>
+            <a
+              href={resumeHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-md shadow-primary/25 transition-shadow duration-300 hover:shadow-primary/40"
+            >
+              Resume
+            </a>
+          </motion.div>
+
+          <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.96 }}>
+            <Link
+              href={contactHref}
+              className="rounded-full bg-primary px-5 py-2 text-sm font-semibold text-primary-foreground shadow-md shadow-primary/25 transition-shadow duration-300 hover:shadow-primary/40"
+            >
+              Hire Me
+            </Link>
+          </motion.div>
+        </div>
 
         <button
           type="button"
@@ -98,7 +110,7 @@ export function Navbar() {
           aria-expanded={isMenuOpen}
           aria-controls="mobile-navigation"
           aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
-          className="inline-flex size-9 items-center justify-center rounded-full border border-primary/10 bg-white/35 text-foreground transition-colors hover:bg-primary/10 hover:text-primary md:hidden"
+          className="inline-flex size-9 items-center justify-center rounded-full border border-primary/10 bg-white/35 text-foreground transition-[background-color,color,scale] duration-150 ease-out hover:bg-primary/10 hover:text-primary active:scale-[0.96] motion-reduce:active:scale-100 md:hidden"
         >
           {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
         </button>
@@ -107,10 +119,26 @@ export function Navbar() {
           {isMenuOpen && (
             <motion.div
               id="mobile-navigation"
-              initial={{ opacity: 0, y: -14, scaleY: 0.9, filter: "blur(8px)" }}
-              animate={{ opacity: 1, y: 0, scaleY: 1, filter: "blur(0px)" }}
-              exit={{ opacity: 0, y: -12, scaleY: 0.94, filter: "blur(5px)" }}
-              transition={{ type: "spring", stiffness: 360, damping: 30 }}
+              initial={
+                shouldReduceMotion
+                  ? { opacity: 0 }
+                  : { opacity: 0, y: -14, scaleY: 0.9, filter: "blur(8px)" }
+              }
+              animate={
+                shouldReduceMotion
+                  ? { opacity: 1 }
+                  : { opacity: 1, y: 0, scaleY: 1, filter: "blur(0px)" }
+              }
+              exit={
+                shouldReduceMotion
+                  ? { opacity: 0 }
+                  : { opacity: 0, y: -12, scaleY: 0.94, filter: "blur(5px)" }
+              }
+              transition={
+                shouldReduceMotion
+                  ? { duration: 0.15, ease: "easeOut" }
+                  : { type: "spring", stiffness: 360, damping: 30 }
+              }
               className="absolute top-full right-0 left-0 mt-3 origin-top overflow-hidden rounded-[1.75rem] border border-white bg-white p-3 shadow-[0_24px_70px_rgba(133,146,67,0.18)] md:hidden"
             >
               <ul className="space-y-1">
@@ -133,10 +161,20 @@ export function Navbar() {
                 })}
               </ul>
 
+              <a
+                href={resumeHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setIsMenuOpen(false)}
+                className="relative mt-3 block rounded-2xl bg-primary px-4 py-3 text-center text-sm font-semibold text-primary-foreground shadow-md shadow-primary/25 transition-[box-shadow,scale] duration-150 ease-out hover:shadow-lg hover:shadow-primary/40 active:scale-[0.96] motion-reduce:active:scale-100"
+              >
+                Resume
+              </a>
+
               <Link
                 href={contactHref}
                 onClick={() => setIsMenuOpen(false)}
-                className="relative mt-3 block rounded-2xl bg-primary px-4 py-3 text-center text-sm font-semibold text-primary-foreground shadow-md shadow-primary/25 transition-colors hover:bg-primary/90 active:scale-[0.98]"
+                className="relative mt-3 block rounded-2xl bg-primary px-4 py-3 text-center text-sm font-semibold text-primary-foreground shadow-md shadow-primary/25 transition-[box-shadow,scale] duration-150 ease-out hover:shadow-lg hover:shadow-primary/40 active:scale-[0.96] motion-reduce:active:scale-100"
               >
                 Hire Me
               </Link>

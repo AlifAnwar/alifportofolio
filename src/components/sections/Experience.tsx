@@ -61,15 +61,17 @@ export function Experience() {
               Experience That Builds Trust
             </h2>
 
-            <button
-              type="button"
-              onClick={() => console.log("Resume link clicked")}
-              className="p-4 mb-8 w-fit inline-flex items-center gap-3 rounded-full border border-primary/20 bg-primary px-6 h-10 text-left text-base font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary/25"            >
+            <a
+              href="/assets/docs/Muhamad%20Alif%20Anwar%20-%20Resume%202026.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-4 mb-8 w-fit inline-flex items-center gap-3 rounded-full border border-primary/20 bg-primary px-6 h-10 text-left text-base font-semibold text-primary-foreground shadow-lg shadow-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-primary/25"
+            >
               <span>See my resume</span>
               <span className="grid size-8 place-items-center rounded-full bg-white/20">
                 <ArrowUpRight className="size-4" />
               </span>
-            </button>
+            </a>
           </div>
 
           <div className="border-t border-border/80 ">

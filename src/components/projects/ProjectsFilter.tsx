@@ -132,7 +132,7 @@ export function ProjectsFilter({ projects }: ProjectsFilterProps) {
                 <div className="mt-auto flex flex-wrap gap-4 pt-2">
                   <Link
                     href={`/projects/${project.slug}`}
-                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition-colors hover:text-primary/80"
+                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary underline-offset-4 hover:underline"
                   >
                     Detail Project <ArrowUpRight className="size-4" />
                   </Link>

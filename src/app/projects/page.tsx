@@ -10,7 +10,7 @@ export default function ProjectsPage() {
   return (
     <>
       <Navbar />
-      <main className="min-h-screen bg-background px-6 pb-20 pt-32 sm:pb-24">
+      <main id="main-content" className="min-h-screen bg-background px-6 pb-20 pt-32 sm:pb-24">
         <div className="mx-auto max-w-7xl">
           <div className="mb-16 flex flex-col gap-8">
             <div className="flex flex-wrap items-center justify-between gap-4">

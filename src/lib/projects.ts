@@ -7,7 +7,8 @@ export type ProjectItem = {
   description: string;
   highlights: string[];
   imageSrc: string[];
-  liveUrl: string;
+  liveLabel?: string;
+  liveUrl?: string;
   name: string;
   outcome: string[];
   overview: string;

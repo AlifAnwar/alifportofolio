@@ -13,11 +13,12 @@
       "/assets/images/project/Web/Alkahfi/hadish1.png"
     ],
     "liveUrl": "https://alkahfimuslimcenter.vercel.app/",
+    "liveLabel": "Open live website",
     "sourceUrl": "https://github.com",
     "year": "2025",
     "category": "Web App",
     "role": "Frontend Developer",
-    "timeline": "A weeks",
+    "timeline": "1 week",
     "client": "Al Kahfi Mosque, Bintan",
     "overview": "Al Kahfi Mosque Platform brings essential worship information into one accessible website, helping the community check prayer times, browse daily prayers, explore hadith collections, and access donation information.",
     "challenge": [
@@ -31,9 +32,9 @@
       "Built responsive interfaces with clear navigation between key mosque services."
     ],
     "outcome": [
-      "Centralized essential mosque information in one digital platform.",
-      "Made prayer schedules and religious content easier to access.",
-      "Delivered a consistent interface for the Al Kahfi community."
+      "Delivered one responsive destination for prayer schedules, daily prayers, hadith, and donation information.",
+      "Made the mosque's core information easier to browse across desktop and mobile.",
+      "Created reusable content patterns the mosque can extend with future services."
     ],
     "highlights": [
       "Monthly prayer schedule",
@@ -58,13 +59,14 @@
       "/assets/images/project/Web/xueinmandarin/challenge4.png"
     ],
     "liveUrl": "https://xueinmandarin.vercel.app/",
+    "liveLabel": "Open live website",
     "sourceUrl": "https://github.com",
     "year": "2026",
     "category": "Web App",
     "role": "Frontend Developer",
     "timeline": "2 weeks",
     "client": "Personal Project",
-    "overview": "Has been use for more 100 users, xue in Mandarin Learning Platform brings essential language learning resources into one accessible website, helping learners improve their Chinese proficiency through interactive 4 lessons and practice exercises.",
+    "overview": "Xue in Mandarin is a responsive learning platform that organizes four interactive lessons and practice exercises in one place, helping learners build Chinese proficiency through a structured experience.",
     "challenge": [
       "Language learning materials were scattered across different platforms.",
       "Users needed a structured approach to progress through lessons.",
@@ -76,9 +78,9 @@
       "Implemented responsive design principles for optimal performance on all devices."
     ],
     "outcome": [
-      "Provided a centralized hub for Chinese language learning resources.",
-      "Enhanced user engagement through interactive learning features.",
-      "Delivered a seamless experience for learners across different devices."
+      "Delivered four interactive lessons with supporting practice exercises in one responsive learning flow.",
+      "Organized grammar, vocabulary, and lesson progress into a consistent interface.",
+      "Built a reusable frontend foundation for additional Mandarin content."
     ],
     "highlights": [
       "Interactive grammar lessons",
@@ -102,11 +104,12 @@
       "/assets/images/project/Web/bintanDrift/destinationDetail.png"
     ],
     "liveUrl": "https://bintandrifttour.id/",
+    "liveLabel": "Open live website",
     "sourceUrl": "https://github.com",
     "year": "2026",
     "category": "Company Profile",
     "role": "Frontend Developer",
-    "timeline": "A weeks",
+    "timeline": "2 weeks",
     "client": "Bintan Drift Tour Agent",
     "overview": "Bintan Drift Tour Agent is a company profile website developed to establish a stronger digital presence for the business and provide potential customers with clear information about its travel services and destinations. The website focuses on presenting the brand professionally, improving service discoverability, and creating a more engaging experience for visitors across different devices.",
     "challenge": [
@@ -123,10 +126,9 @@
       "Optimized layouts and components for different screen sizes to provide a consistent browsing experience across devices."
     ],
     "outcome": [
-      "Delivered a modern and responsive company profile website within the planned two-week development period.",
-      "Established a dedicated digital presence that allows potential customers to explore Bintan Drift Tour Agent's services and destinations more easily.",
-      "Improved the overall presentation of the company's brand through a structured, professional, and visually engaging interface.",
-      "Created a reusable frontend structure that can support future content, destinations, and service expansions."
+      "Launched a responsive company profile within a two-week delivery window.",
+      "Centralized travel services and destinations in a clearer browsing experience.",
+      "Built reusable frontend sections for future destinations and service updates."
     ],
     "highlights": [
       "Responsive Design",
@@ -150,10 +152,11 @@
       "/assets/images/project/Web/BengkelKoding/4.png"
     ],
     "liveUrl": "https://bengkelkoding.dinus.id/",
+    "liveLabel": "Open live website",
     "sourceUrl": "https://github.com",
     "year": "2025",
     "category": "Platform",
-    "role": "Full-stack Developer",
+    "role": "Frontend Prototype Developer",
     "timeline": "6 weeks",
     "client": "Education platform concept",
     "overview": "Bengkel Koding LMS is a web platform concept for managing courses, student progress, learning materials, and academic operations from one responsive interface.",
@@ -167,145 +170,15 @@
       "Created role-aware UI patterns for student and admin experiences."
     ],
     "outcome": [
-      "Created a scalable LMS concept for academic workflows.",
-      "Improved clarity across course delivery and progress tracking.",
-      "Kept the interface responsive and easier to maintain."
+      "Built a responsive LMS prototype covering course delivery, progress tracking, and admin workflows.",
+      "Created shared interface patterns for student and administrator views.",
+      "Established a typed, reusable frontend structure for future academic features."
     ],
     "highlights": [
       "Role-aware LMS structure",
       "Course and progress tracking",
       "Typed frontend architecture",
       "Responsive education dashboard"
-    ]
-  },
-
-  {
-    "slug": "fokusin-pomodoro-app",
-    "name": "Fokusin",
-    "description": "A gamified Pomodoro app that turns focused time into collectible egg and character rewards, helping users build consistent productivity habits.",
-    "stack": ["SwiftUI", "SwiftData", "MVVM", "iOS", "iPadOS"],
-    "imageSrc": [
-      "/assets/images/project/Mobile/Fokusin/fokusin.png",
-      "/assets/images/project/Mobile/Fokusin/fokusin2.png"
-    ],
-    "liveUrl": "https://www.linkedin.com/posts/muhamad-alif-anwar_fokusin-pomodoro-iphone-activity-7363951350684008448-Hbie?utm_source=share&utm_medium=member_desktop&rcm=ACoAADCyDIcBTbY95eLjNpwZgXhrDCVl2nrQ31I",
-    "sourceUrl": "https://github.com",
-    "year": "2026",
-    "category": "iOS App",
-    "platform": "mobile",
-    "role": "iOS Developer & UI Designer",
-    "timeline": "2 weeks",
-    "client": "Personal Project",
-    "overview": "Fokusin is a SwiftUI-based Pomodoro app designed to make deep work more engaging through progressive rewards. As users accumulate focus time, they unlock collectible eggs and characters that visualize their progress. I handled the product end to end, from interface design and MVVM architecture to SwiftData persistence, responsive iPhone and iPad layouts, and App Store readiness.",
-    "challenge": [
-      "Traditional focus timers often provide little motivation beyond completing a session.",
-      "Timer history, statistics, and collectible progress needed to remain consistent between app launches.",
-      "The interface had to adapt comfortably to different iPhone and iPad screen sizes while keeping the timer easy to read."
-    ],
-    "solution": [
-      "Built preset and custom Pomodoro timers with animated progress and clear session states.",
-      "Structured the application with MVVM and used SwiftData for persistent sessions, statistics, and unlock progress.",
-      "Created a progressive egg and character reward system based on total accumulated focus time.",
-      "Designed responsive SwiftUI layouts and prepared the product for App Store distribution."
-    ],
-    "outcome": [
-      "Delivered an end-to-end productivity experience that connects focused work with visible rewards.",
-      "Made long-term progress easier to understand through history, statistics, and collectible states.",
-      "Created a maintainable native architecture that supports future timers, characters, and progression features."
-    ],
-    "highlights": [
-      "Preset and custom focus timers",
-      "Animated timer progress",
-      "History and focus statistics",
-      "Progressive character collectibles",
-      "SwiftData persistence",
-      "Responsive iPhone and iPad layouts"
-    ]
-  },
-
-  {
-    "slug": "broceries-smart-grocery-app",
-    "name": "Broceries",
-    "description": "A smart grocery companion that recommends personalized shopping lists, tracks household stock, and alerts users before items run low or expire.",
-    "stack": ["SwiftUI", "SwiftData", "CoreLocation", "UserNotifications", "watchOS"],
-    "imageSrc": [
-      "/assets/images/project/Mobile/Broceries/broceries.png"
-    ],
-    "liveUrl": "https://www.linkedin.com/posts/muhamad-alif-anwar_dont-shop-blind-weve-got-you-weve-successfully-activity-7363955862689771543-5491?utm_source=share&utm_medium=member_desktop&rcm=ACoAADCyDIcBTbY95eLjNpwZgXhrDCVl2nrQ31I",
-    "sourceUrl": "https://github.com",
-    "year": "2026",
-    "category": "iOS & watchOS App",
-    "platform": "mobile",
-    "role": "iOS Developer & UI Designer",
-    "timeline": "2 weeks",
-    "client": "Personal Project",
-    "overview": "Broceries is a lightweight grocery and household inventory app that recommends personalized shopping lists based on a user's history and current needs. It tracks item availability at home, warns when stock is running low or approaching expiration, and uses CoreLocation to help users find nearby stores and markets. The experience extends across Apple devices, including Apple Watch, while keeping personal inventory data securely on-device.",
-    "challenge": [
-      "Household inventory changes frequently and is difficult to track without adding friction to everyday routines.",
-      "Shopping recommendations needed to reflect both purchase history and the user's current stock levels.",
-      "Low-stock, expiration, location, and cross-device features had to feel useful without making the app heavy or intrusive."
-    ],
-    "solution": [
-      "Created a personalized shopping-list flow informed by item history and household needs.",
-      "Built inventory tracking for item availability, stock levels, and expiration dates.",
-      "Added local notifications for products that are running low or nearing expiration.",
-      "Used CoreLocation for nearby store discovery and extended essential information to Apple Watch."
-    ],
-    "outcome": [
-      "Combined grocery planning and household inventory into one focused native experience.",
-      "Helped reduce forgotten purchases and potential food waste through timely stock and expiration reminders.",
-      "Kept the product lightweight and privacy-conscious while supporting connected Apple devices."
-    ],
-    "highlights": [
-      "Personalized shopping recommendations",
-      "Household inventory tracking",
-      "Low-stock and expiration alerts",
-      "Nearby store discovery",
-      "Apple Watch support",
-      "On-device data storage"
-    ]
-  },
-
-  {
-    "slug": "orenji-basketball-posture-coach",
-    "name": "Orenji",
-    "description": "An AI-assisted basketball posture coach that evaluates shooting form in real time and provides immediate visual, haptic, and Apple Watch feedback.",
-    "stack": ["SwiftUI", "Vision", "AVFoundation", "Core Haptics", "watchOS"],
-    "imageSrc": [
-      "/assets/images/project/Mobile/Orenji/orenji.png"
-    ],
-    "liveUrl": "https://www.linkedin.com/posts/muhamad-alif-anwar_meet-orenji-a-mobile-app-that-helps-basketball-activity-7363961596987031552-e1-O?utm_source=share&utm_medium=member_desktop&rcm=ACoAADCyDIcBTbY95eLjNpwZgXhrDCVl2nrQ31I",
-    "sourceUrl": "https://github.com",
-    "year": "2026",
-    "category": "iOS & watchOS App",
-    "platform": "mobile",
-    "role": "iOS Developer & UI Designer",
-    "timeline": "2 weeks",
-    "client": "Personal Project",
-    "overview": "Orenji is an iOS basketball training app built with SwiftUI and Vision to evaluate shooting posture from a live camera feed or recorded video. It analyzes important body angles across the shoulders, elbows, hips, and knees, then translates the results into immediate visual and haptic guidance. Apple Watch support keeps posture status visible on the user's wrist and provides a tap whenever their form needs correction.",
-    "challenge": [
-      "Basketball players often need immediate, understandable feedback to correct shooting form during practice.",
-      "Raw pose landmarks and joint angles had to be translated into useful posture guidance instead of overwhelming technical data.",
-      "Camera analysis, interface updates, haptics, and Apple Watch feedback needed to work together with minimal interruption."
-    ],
-    "solution": [
-      "Used Vision pose detection to analyze shoulder, elbow, hip, and knee angles from live or recorded footage.",
-      "Designed a real-time SwiftUI feedback layer that clearly communicates posture status and areas for correction.",
-      "Added haptic cues so players can react without continuously watching the screen.",
-      "Extended posture status and correction alerts to Apple Watch for more accessible feedback during training."
-    ],
-    "outcome": [
-      "Created an accessible training experience that turns pose-analysis data into actionable shooting feedback.",
-      "Enabled athletes to review both live and recorded movement while receiving immediate correction cues.",
-      "Expanded the coaching experience beyond the phone through synchronized visual and wrist-based feedback."
-    ],
-    "highlights": [
-      "Real-time posture analysis",
-      "Live camera and recorded video input",
-      "Multi-joint angle evaluation",
-      "Visual and haptic corrections",
-      "Apple Watch posture status",
-      "Vision-powered pose detection"
     ]
   },
 
@@ -325,7 +198,6 @@
     "imageSrc": [
       "/assets/images/project/Mobile/Morro/morro.png"
     ],
-    "liveUrl": "/-",
     "sourceUrl": "https://github.com",
     "year": "2026",
     "category": "AI-powered iOS App",
@@ -347,9 +219,9 @@
       "Built WidgetKit and Live Activity experiences so users can follow active simulations and key updates outside the main app."
     ],
     "outcome": [
-      "Created a more grounded way for first-time movers to understand the practical experience of living in Japan.",
-      "Turned broad relocation information into personalized scenarios and interactive decision support.",
-      "Delivered a native iOS foundation that connects AI conversations, location context, persistent progress, widgets, and Live Activities."
+      "Built a native iOS prototype that combines AI conversations, scenario preferences, and location context.",
+      "Persisted simulation progress and saved decisions on-device with SwiftData.",
+      "Extended active scenarios beyond the app through widgets and Live Activities."
     ],
     "highlights": [
       "AI-powered interactive conversations",
@@ -358,6 +230,139 @@
       "Japan location exploration with MapKit",
       "Persistent simulation progress",
       "Widgets and Live Activities"
+    ]
+  },
+
+  {
+    "slug": "broceries-smart-grocery-app",
+    "name": "Broceries",
+    "description": "A smart grocery companion that recommends personalized shopping lists, tracks household stock, and alerts users before items run low or expire.",
+    "stack": ["SwiftUI", "SwiftData", "CoreLocation", "UserNotifications", "watchOS"],
+    "imageSrc": [
+      "/assets/images/project/Mobile/Broceries/broceries.png"
+    ],
+    "liveUrl": "https://www.linkedin.com/posts/muhamad-alif-anwar_dont-shop-blind-weve-got-you-weve-successfully-activity-7363955862689771543-5491?utm_source=share&utm_medium=member_desktop&rcm=ACoAADCyDIcBTbY95eLjNpwZgXhrDCVl2nrQ31I",
+    "liveLabel": "Watch demo on LinkedIn",
+    "sourceUrl": "https://github.com",
+    "year": "2026",
+    "category": "iOS & watchOS App",
+    "platform": "mobile",
+    "role": "iOS Developer & UI Designer",
+    "timeline": "2 weeks",
+    "client": "Personal Project",
+    "overview": "Broceries is a lightweight grocery and household inventory app that recommends personalized shopping lists based on a user's history and current needs. It tracks item availability at home, warns when stock is running low or approaching expiration, and uses CoreLocation to help users find nearby stores and markets. The experience extends across Apple devices, including Apple Watch, while keeping personal inventory data securely on-device.",
+    "challenge": [
+      "Household inventory changes frequently and is difficult to track without adding friction to everyday routines.",
+      "Shopping recommendations needed to reflect both purchase history and the user's current stock levels.",
+      "Low-stock, expiration, location, and cross-device features had to feel useful without making the app heavy or intrusive."
+    ],
+    "solution": [
+      "Created a personalized shopping-list flow informed by item history and household needs.",
+      "Built inventory tracking for item availability, stock levels, and expiration dates.",
+      "Added local notifications for products that are running low or nearing expiration.",
+      "Used CoreLocation for nearby store discovery and extended essential information to Apple Watch."
+    ],
+    "outcome": [
+      "Built a native grocery and household-inventory prototype for iPhone and Apple Watch.",
+      "Connected shopping recommendations with current stock and expiration data.",
+      "Kept personal inventory on-device while adding local reminders and nearby-store discovery."
+    ],
+    "highlights": [
+      "Personalized shopping recommendations",
+      "Household inventory tracking",
+      "Low-stock and expiration alerts",
+      "Nearby store discovery",
+      "Apple Watch support",
+      "On-device data storage"
+    ]
+  },
+
+  {
+    "slug": "fokusin-pomodoro-app",
+    "name": "Fokusin",
+    "description": "A gamified Pomodoro app that turns focused time into collectible egg and character rewards, helping users build consistent productivity habits.",
+    "stack": ["SwiftUI", "SwiftData", "MVVM", "iOS", "iPadOS"],
+    "imageSrc": [
+      "/assets/images/project/Mobile/Fokusin/fokusin.png",
+      "/assets/images/project/Mobile/Fokusin/fokusin2.png"
+    ],
+    "liveUrl": "https://www.linkedin.com/posts/muhamad-alif-anwar_fokusin-pomodoro-iphone-activity-7363951350684008448-Hbie?utm_source=share&utm_medium=member_desktop&rcm=ACoAADCyDIcBTbY95eLjNpwZgXhrDCVl2nrQ31I",
+    "liveLabel": "Watch demo on LinkedIn",
+    "sourceUrl": "https://github.com",
+    "year": "2026",
+    "category": "iOS App",
+    "platform": "mobile",
+    "role": "iOS Developer & UI Designer",
+    "timeline": "2 weeks",
+    "client": "Personal Project",
+    "overview": "Fokusin is a SwiftUI-based Pomodoro app designed to make deep work more engaging through progressive rewards. As users accumulate focus time, they unlock collectible eggs and characters that visualize their progress. I handled the product end to end, from interface design and MVVM architecture to SwiftData persistence, responsive iPhone and iPad layouts, and App Store readiness.",
+    "challenge": [
+      "Traditional focus timers often provide little motivation beyond completing a session.",
+      "Timer history, statistics, and collectible progress needed to remain consistent between app launches.",
+      "The interface had to adapt comfortably to different iPhone and iPad screen sizes while keeping the timer easy to read."
+    ],
+    "solution": [
+      "Built preset and custom Pomodoro timers with animated progress and clear session states.",
+      "Structured the application with MVVM and used SwiftData for persistent sessions, statistics, and unlock progress.",
+      "Created a progressive egg and character reward system based on total accumulated focus time.",
+      "Designed responsive SwiftUI layouts and prepared the product for App Store distribution."
+    ],
+    "outcome": [
+      "Built an end-to-end Pomodoro prototype for iPhone and iPad.",
+      "Connected session history, statistics, and collectible progress through SwiftData.",
+      "Created an MVVM foundation that can support additional timers, rewards, and progression rules."
+    ],
+    "highlights": [
+      "Preset and custom focus timers",
+      "Animated timer progress",
+      "History and focus statistics",
+      "Progressive character collectibles",
+      "SwiftData persistence",
+      "Responsive iPhone and iPad layouts"
+    ]
+  },
+
+  {
+    "slug": "orenji-basketball-posture-coach",
+    "name": "Orenji",
+    "description": "An AI-assisted basketball posture coach that evaluates shooting form in real time and provides immediate visual, haptic, and Apple Watch feedback.",
+    "stack": ["SwiftUI", "Vision", "AVFoundation", "Core Haptics", "watchOS"],
+    "imageSrc": [
+      "/assets/images/project/Mobile/Orenji/orenji.png"
+    ],
+    "liveUrl": "https://www.linkedin.com/posts/muhamad-alif-anwar_meet-orenji-a-mobile-app-that-helps-basketball-activity-7363961596987031552-e1-O?utm_source=share&utm_medium=member_desktop&rcm=ACoAADCyDIcBTbY95eLjNpwZgXhrDCVl2nrQ31I",
+    "liveLabel": "Watch demo on LinkedIn",
+    "sourceUrl": "https://github.com",
+    "year": "2026",
+    "category": "iOS & watchOS App",
+    "platform": "mobile",
+    "role": "iOS Developer & UI Designer",
+    "timeline": "2 weeks",
+    "client": "Personal Project",
+    "overview": "Orenji is an iOS basketball training app built with SwiftUI and Vision to evaluate shooting posture from a live camera feed or recorded video. It analyzes important body angles across the shoulders, elbows, hips, and knees, then translates the results into immediate visual and haptic guidance. Apple Watch support keeps posture status visible on the user's wrist and provides a tap whenever their form needs correction.",
+    "challenge": [
+      "Basketball players often need immediate, understandable feedback to correct shooting form during practice.",
+      "Raw pose landmarks and joint angles had to be translated into useful posture guidance instead of overwhelming technical data.",
+      "Camera analysis, interface updates, haptics, and Apple Watch feedback needed to work together with minimal interruption."
+    ],
+    "solution": [
+      "Used Vision pose detection to analyze shoulder, elbow, hip, and knee angles from live or recorded footage.",
+      "Designed a real-time SwiftUI feedback layer that clearly communicates posture status and areas for correction.",
+      "Added haptic cues so players can react without continuously watching the screen.",
+      "Extended posture status and correction alerts to Apple Watch for more accessible feedback during training."
+    ],
+    "outcome": [
+      "Built an iOS and watchOS prototype that converts Vision pose landmarks into posture feedback.",
+      "Supported both live camera analysis and recorded-video review.",
+      "Connected visual, haptic, and Apple Watch cues in one training flow."
+    ],
+    "highlights": [
+      "Real-time posture analysis",
+      "Live camera and recorded video input",
+      "Multi-joint angle evaluation",
+      "Visual and haptic corrections",
+      "Apple Watch posture status",
+      "Vision-powered pose detection"
     ]
   }
 ]

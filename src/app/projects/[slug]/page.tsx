@@ -5,9 +5,9 @@ import { notFound } from "next/navigation";
 import {
   ArrowLeft,
   ArrowUpRight,
+  Building2,
   CalendarDays,
   CheckCircle2,
-  GitBranch,
   Layers3,
   UserRound,
 } from "lucide-react";
@@ -58,7 +58,13 @@ export default async function ProjectDetailPage({
   }
 
   const relatedProjects = getRelatedProjects(project);
+  const isPersonalOrConceptProject = /personal|concept/i.test(project.client);
   const projectMeta = [
+    {
+      label: isPersonalOrConceptProject ? "Project Type" : "Client",
+      value: project.client,
+      icon: Building2,
+    },
     {
       label: "Role",
       value: project.role,
@@ -89,12 +95,19 @@ export default async function ProjectDetailPage({
       title: "Solution",
       points: project.solution,
     },
+    {
+      title: "Delivered outcome",
+      points: project.outcome,
+    },
   ];
 
   return (
     <>
       <Navbar />
-      <main className="min-h-screen overflow-hidden bg-background px-6 pb-20 pt-32 sm:pb-24">
+      <main
+        id="main-content"
+        className="min-h-screen overflow-hidden bg-background px-6 pb-20 pt-32 sm:pb-24"
+      >
         <div className="pointer-events-none fixed inset-0 -z-10">
           <div className="absolute left-[8%] top-32 h-80 w-80 rounded-full bg-primary/10 blur-[110px]" />
           <div className="absolute right-[10%] top-[32rem] h-72 w-72 rounded-full bg-accent/10 blur-[110px]" />
@@ -104,18 +117,18 @@ export default async function ProjectDetailPage({
           <div className="mb-10 flex flex-wrap items-center justify-between gap-4">
             <Link
               href="/projects"
-              className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-foreground shadow-[0_16px_40px_rgba(0,0,0,0.04)] transition-transform hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-foreground shadow-[0_16px_40px_rgba(0,0,0,0.04)] transition-[translate,scale] duration-150 ease-out hover:-translate-y-0.5 active:scale-[0.96] motion-reduce:hover:translate-y-0 motion-reduce:active:scale-100"
             >
-              <ArrowLeft className="size-4" />
+              <ArrowLeft aria-hidden="true" className="size-4" />
               Back to Projects
             </Link>
 
             <Link
               href="https://www.linkedin.com/in/muhamad-alif-anwar/"
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/25 transition-transform hover:-translate-y-0.5"
+              className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/25 transition-[translate,scale] duration-150 ease-out hover:-translate-y-0.5 active:scale-[0.96] motion-reduce:hover:translate-y-0 motion-reduce:active:scale-100"
             >
-              Discuss Similar Project
-              <ArrowUpRight className="size-4" />
+              Discuss a similar project
+              <ArrowUpRight aria-hidden="true" className="size-4" />
             </Link>
           </div>
 
@@ -151,7 +164,7 @@ export default async function ProjectDetailPage({
                 {projectMeta.map(({ label, value, icon: Icon }) => (
                   <div key={label} className="flex items-start gap-3">
                     <div className="rounded-2xl bg-primary/10 p-2 text-primary">
-                      <Icon className="size-4" />
+                      <Icon aria-hidden="true" className="size-4" />
                     </div>
                     <div>
                       <p className="text-xs font-semibold uppercase tracking-[0.16em] text-muted-foreground">
@@ -183,16 +196,19 @@ export default async function ProjectDetailPage({
               <p className="mt-5 text-base leading-8 text-muted-foreground">
                 {project.overview}
               </p>
-              <div className="mt-7 flex flex-wrap gap-4">
-                <Link
-                  href={project.liveUrl}
-                  target="_blank"
-                  className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/25 transition-transform hover:-translate-y-0.5"
-                >
-                  Live Preview
-                  <ArrowUpRight className="size-4" />
-                </Link>
-              </div>
+              {project.liveUrl && (
+                <div className="mt-7 flex flex-wrap gap-4">
+                  <Link
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground shadow-lg shadow-primary/25 transition-[translate,scale] duration-150 ease-out hover:-translate-y-0.5 active:scale-[0.96] motion-reduce:hover:translate-y-0 motion-reduce:active:scale-100"
+                  >
+                    {project.liveLabel ?? "Open live project"}
+                    <ArrowUpRight aria-hidden="true" className="size-4" />
+                  </Link>
+                </div>
+              )}
             </div>
 
             <div className="grid gap-5">
@@ -208,7 +224,7 @@ export default async function ProjectDetailPage({
                     {points.map((point) => (
                       <li
                         key={point}
-                        className="flex gap-3 text-sm leading-6 text-muted-foreground"
+                        className="flex gap-3 text-base leading-7 text-muted-foreground"
                       >
                         <span className="mt-2 size-1.5 shrink-0 rounded-full bg-primary" />
                         <span>{point}</span>
@@ -250,7 +266,7 @@ export default async function ProjectDetailPage({
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {project.highlights.map((highlight) => (
                 <div key={highlight} className="glass-card rounded-3xl p-5">
-                  <CheckCircle2 className="size-5 text-primary" />
+                  <CheckCircle2 aria-hidden="true" className="size-5 text-primary" />
                   <p className="mt-4 text-sm font-semibold leading-6 text-foreground">
                     {highlight}
                   </p>
@@ -271,10 +287,10 @@ export default async function ProjectDetailPage({
               </div>
               <Link
                 href="/projects"
-                className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-primary/80"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-primary underline-offset-4 hover:underline"
               >
                 View all projects
-                <ArrowUpRight className="size-4" />
+                <ArrowUpRight aria-hidden="true" className="size-4" />
               </Link>
             </div>
 
@@ -282,7 +298,7 @@ export default async function ProjectDetailPage({
               {relatedProjects.map((relatedProject) => (
                 <article
                   key={relatedProject.slug}
-                  className="group flex min-h-80 flex-col gap-5 rounded-3xl bg-white p-5 shadow-[0_18px_60px_rgba(0,0,0,0.045)] transition-transform duration-300 hover:-translate-y-1"
+                  className="group flex min-h-80 flex-col gap-5 rounded-3xl bg-white p-5 shadow-[0_18px_60px_rgba(0,0,0,0.045)] transition-transform duration-300 hover:-translate-y-1 motion-reduce:hover:translate-y-0"
                 >
                   <Link
                     href={`/projects/${relatedProject.slug}`}
@@ -292,7 +308,7 @@ export default async function ProjectDetailPage({
                       src={relatedProject.imageSrc[0]}
                       alt={`${relatedProject.name} preview`}
                       fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                      className="object-cover transition-transform duration-500 group-hover:scale-[1.03] motion-reduce:group-hover:scale-100"
                       sizes="(min-width: 768px) 33vw, 100vw"
                     />
                   </Link>
@@ -311,10 +327,10 @@ export default async function ProjectDetailPage({
 
                   <Link
                     href={`/projects/${relatedProject.slug}`}
-                    className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors hover:text-primary/80"
+                    className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-primary underline-offset-4 hover:underline"
                   >
                     View Case Study
-                    <ArrowUpRight className="size-4" />
+                    <ArrowUpRight aria-hidden="true" className="size-4" />
                   </Link>
                 </article>
               ))}
